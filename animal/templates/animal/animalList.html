@@ -1,0 +1,9 @@
+{% extends 'animal/baseanimal.html' %}
+{% block titulo%} Lista de Animales en Adopcion {% endblock %}
+{% block contenido %}
+  {% for animal in lista_animales %}
+      <ul>
+        <li>{{animal}}</li>
+      </ul>
+  {% endfor %}
+{% endblock %}
