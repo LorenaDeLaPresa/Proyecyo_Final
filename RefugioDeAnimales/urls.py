@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog', index),
     path('listar_animales/', AnimalList.as_view(), name='animal_listar'),
+    path('adopcion/', include('apps.adopcion.urls'),name="adopcion")
 ]
